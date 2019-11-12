@@ -1,0 +1,113 @@
+"""
+Auteur : Ratni Mohamed
+Version : version_1
+Date : 18/10/2019
+
+Une introduction au langage python.
+"""
+
+# Afficher un message
+print("premier commit dans mon cours python")
+
+print("***** 1 ***********************************************")
+print("Bonjour, voila votre premier message !!!")
+#Afficher plusieur message sur plusier ligne
+print("Bonjour")
+print("voila")
+print("votre premier message")
+
+#Afficher plusieur message sur la meme ligne
+print("***** 2 ***********************************************")
+print("Bonjour","voila","votre premier message")
+
+# utilise "end=" pour ne pas revien a la ligne
+print("***** 3 ***********************************************")
+print("Bonjour ", end ='' );
+print("tous le monde")
+
+#Affiche les nombre
+print("***** 4 ***********************************************")
+print( "bonjour", 100, "fois")
+
+#manipulez des textes
+print("***** 5 manipulez des textes ***********************************************")
+# retour a la ligne avec \n
+print("c'est un langage --> un seul projet developpé ")
+print("c'est un langage --> \n un seul projet developpé ")
+# tabulation avec \t
+print("c'est un langage --> \n\t un seul projet developpé ")
+# retour chariot avec \r
+print("c'est un langage --> \n\t\r un seul projet developpé ")
+
+
+#pour annuler les caracteire spéciaux o, utilise \
+print("***** 6  annuler les caracteire spéciaux ***********************************************")
+print("cest un langage --> \\n un seul projet developpé ")
+
+print("***** 7 - Declaration des variables***************************************")
+# ***** Declaration des variables *******
+x = 10;
+print("la valeur de x : " , x)
+
+chanie = "salam";
+y = 7.8
+z = True
+e= 1.8e-10
+
+print(chanie, type(chanie))
+print(x, type(x))
+print(y, type(y))
+print(z, type(z))
+print(e, type(e))
+
+# Arondir un nbr flotant en nbr entier
+print("***** 8 - Arondir un nbr flotant en nbr entier***************************************")
+
+srt = 1.74645373846453474846464;
+print(srt)
+s = round(srt);
+h = round(srt, 3);
+print(s);
+print(h);
+
+
+print("***** 9 - afficher les types ***************************************")
+
+var, xx, ch, b = 100, 20.5, "Bonjour", False;
+
+print(var, type(var))
+print(xx, type(xx))
+print(ch, type(ch))
+print(b, type(b))
+
+print(var, xx, ch, b)
+
+#convertir les type de variable
+print("***** 10 - convertir les type de variable***************************************")
+
+k = "37.33";
+n = float(k)
+print(n)
+m = eval(k)
+print(m, type(m))
+
+# On utilise le bloc tru/execpt pour gérer les erreurs :
+print("***** 11 - cle bloc tru/execpt ***************************************")
+
+try:
+    d = "50"
+    w= int(d)
+    print(w, type(w))
+except:
+    print("Désolé conversion impossible")
+
+q = "bonjour"
+qq = bool(q)
+print(qq, type(qq))
+try:
+    qq = int(q)
+    print(qq, type(qq))
+except:
+    print("Désolé, impossible de convertir une chaine de carctaire en nombre entier!!!!!")
+
+print("***** 12 -  ***************************************")
